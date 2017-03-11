@@ -9,10 +9,10 @@ c=0
 for i in range(q):
     l.append(input())
 print("#2")
-for i in m:
+for x in m:
     print("#3")
-    for j in l:
-        c = c + j.count(m)
+    for y in l:
+        c = c + y.count(x)
         print("#4")
     print(c)
     c=0
