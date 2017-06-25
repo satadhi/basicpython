@@ -9,13 +9,16 @@ if  list1[0] < 0 :
 for i in list1:
     if i < 0 and i > temp:
         temp = i
+        flag = -1
+
     temp1 = temp1 + i
+
     if temp1 < 0:
         temp1 = 0
     if temp1 >=real_sum:
-        real_sum = temp1
-        flag = 1    
-if flag == 0:
-    print("the largest sub-array is {}".format(temp))
+        real_sum = temp1    
+
+if flag is -1:
+    print("only for negative number! {}".format(temp))
 else:
     print("the largest sub-arry is {}".format(real_sum))    
